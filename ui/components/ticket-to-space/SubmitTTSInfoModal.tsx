@@ -76,7 +76,7 @@ export function SubmitTTSInfoModal({
     try {
       console.log(signature)
       console.log(address)
-      fetch(`/api/db/nft?address=${address}`, {
+      await fetch(`/api/db/nft?address=${address}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
